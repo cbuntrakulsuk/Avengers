@@ -1,0 +1,21 @@
+// Colors
+
+$brightRed: #C23333;
+$darkBlue:#42778A;
+
+// Font Sizes
+
+$font-sm: 1.125rem; // 18px
+$font-med: 1.25rem; // 20px
+$font-large: 1.5625rem; // 25px
+
+// Font
+
+@font-face {
+    font-family: 'avengeance_heroic_avengerIt';
+    src: url('/font/avengeance_heroic_avenger_at-webfont.woff2') format('woff2'),
+         url('/font/avengeance_heroic_avenger_at-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}

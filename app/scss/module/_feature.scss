@@ -1,0 +1,88 @@
+.feature {
+
+    &__content {
+        margin-top: 7.5rem;
+
+    }
+
+    &__heading {
+        > p {
+            padding-bottom: 58px;
+            font-size: $font-med;
+        }
+
+        @include breakpoint-up(large) {
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+    }
+
+    &__grid { 
+
+        @include breakpoint-up(large){
+            display: flex;
+            justify-content: center;
+        }
+
+    }
+
+    &__item {
+
+        //border: 1px solid black;
+        margin-bottom: 4rem; 
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        
+
+        @include breakpoint-up(large) {
+            flex: 1;
+            max-width: 250px;
+            max-height: 300px;
+
+            &:not(:last-child){
+                margin-right: 6rem;
+              }
+        }
+
+        &--blue {
+            border: 1px solid #0000FF;
+        }
+        &--green {
+            border: 1px solid #008000;
+        }
+        &--red {
+            border: 1px solid #D40000;
+        }
+
+    }
+
+    &__icon {
+        position: relative;
+        text-align: center;
+        bottom: 11%;
+
+        @include breakpoint-down(medium){
+            position: relative;
+            text-align: center;
+            bottom: 1.4375rem;
+        }
+    }
+
+    &__title {
+        font-size: $font-med;
+        text-align: center;
+        position: relative;
+        padding-bottom: 20px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.288);
+        width: 65%;
+        left: 17%;
+        margin-bottom: 10px;
+    }
+
+    &__description {
+        padding: 20px;
+        padding-bottom: 30px;
+
+    }
+
+
+}
