@@ -301,23 +301,18 @@ h3 {
   }
 }
 
-.footer__location {
-  min-width: 400px;
+.footer__item {
+  padding-bottom: 15px;
 }
 
-.footer__socials {
-  min-width: 400px;
-}
-
-.footer__socials > a {
-  padding: 3px;
-}
-
-.footer__email {
-  min-width: 400px;
+@media (min-width: 40em) {
+  .footer__item {
+    min-width: 400px;
+  }
 }
 
 .footer__copyright {
+  font-size: 1.125rem;
   padding: 5px;
   min-height: 30px;
 }

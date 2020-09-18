@@ -10,23 +10,15 @@
         }
     }
 
-    &__location {
-        min-width: 400px;
-    }
-
-    &__socials {
-        min-width: 400px;
-        > a {
-            padding: 3px;
+    &__item {
+        padding-bottom: 15px;
+        @include breakpoint-up(medium){
+            min-width: 400px;
         }
     }
 
-    &__email {
-        min-width: 400px;
-    }
-
     &__copyright {
-        font-size: $font-small;
+        font-size: $font-sm;
         padding: 5px;
         min-height: 30px;
     }
