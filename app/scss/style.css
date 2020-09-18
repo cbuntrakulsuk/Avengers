@@ -213,8 +213,8 @@ h3 {
   right: 0px;
   bottom: 0px;
   left: 0px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#42778A), to(transparent));
-  background-image: linear-gradient(#42778A, transparent);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#488195), to(transparent));
+  background-image: linear-gradient(#488195, transparent);
 }
 
 .header nav {
@@ -264,7 +264,7 @@ h3 {
 .header__menu a {
   display: block;
   padding: 0.625rem;
-  color: #42778A;
+  color: #488195;
   text-align: center;
 }
 
@@ -315,6 +315,11 @@ h3 {
 
 .footer__email {
   min-width: 400px;
+}
+
+.footer__copyright {
+  padding: 5px;
+  min-height: 30px;
 }
 
 .hero {
@@ -368,6 +373,10 @@ h3 {
 }
 
 .segment--bgBlue {
+  background-color: #488195;
+}
+
+.segment--footerBlue {
   background-color: #42778A;
 }
 
