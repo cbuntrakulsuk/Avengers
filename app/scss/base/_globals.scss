@@ -27,6 +27,13 @@ h2 {
     letter-spacing: 0.015em;
 }
 
+h3 {
+    font-weight: 100;
+    font-family: 'avengeance_heroic_avengerIt';
+    letter-spacing: 0.015em;
+    font-size: $font-large;
+}
+
 .container {
     max-width: 75rem;
     margin: 0 auto;

@@ -1,0 +1,29 @@
+.footer {
+
+    flex:1;
+    text-align: center;
+
+    &__grid {
+        @include breakpoint-up(large){
+            display: flex;
+            //align-items: center;
+        }
+    }
+
+    &__location {
+        min-width: 400px;
+    }
+
+    &__socials {
+        min-width: 400px;
+        > a {
+            padding: 3px;
+        }
+    }
+
+    &__email {
+        min-width: 400px;
+    }
+
+
+}
