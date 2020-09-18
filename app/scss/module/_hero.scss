@@ -1,4 +1,9 @@
 .hero {
+    margin-bottom: 7.375rem;
+
+    @include breakpoint-down(small){
+        margin-bottom: 1rem;
+    }
 
     &__image {
 

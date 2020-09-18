@@ -1,25 +1,63 @@
-.feature {
+.segment {
+
+    &--bgRed {
+        background-color: $brightRed;
+    }
+    &--bgBlue {
+        background-color: $darkBlue;
+    }
 
     &__content {
 
         margin-top: 20px;
 
-        @include breakpoint-up(medium) {
-            margin-top: 7.5rem;
-        }
-
     }
 
     &__heading {
+        
+        padding-top: 45px;
+
         > p {
-            padding-bottom: 58px;
+            padding-bottom: 5rem;
             font-size: $font-med;
+            @include breakpoint-down(small) {
+                padding-bottom: 3rem;
+            }
         }
 
         @include breakpoint-up(large) {
             padding-left: 50px;
             padding-right: 50px;
         }
+    }
+
+    &__divider {
+        padding-bottom: 10px;
+
+        > h2 {
+            width: 100%; 
+            text-align: center; 
+            border-bottom: 1px solid #000; 
+            line-height: 0.1em;
+            margin: 10px 0 20px; 
+        }
+        
+        &--w {
+            > h2 span {
+                padding:0 10px; 
+                padding-right: 15px;
+                background: white;
+            }
+        }
+
+        &--r {
+            > h2 span {
+                padding:0 10px; 
+                padding-right: 15px;
+                background: $brightRed;
+            }
+        }
+
     }
 
     &__grid { 
@@ -88,5 +126,20 @@
 
     }
 
+    &__fbox {
+        flex: 1;
 
+        @include breakpoint-up(large)
+        {
+            max-width: 465px;
+            padding-top: 30px;
+            font-size: $font-med;
+        }
+
+        @include breakpoint-down(medium) {
+            padding-left: 25px;
+            padding-right: 25px;
+            padding-bottom: 25px;
+        }
+    }
 }
