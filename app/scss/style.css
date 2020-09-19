@@ -303,12 +303,7 @@ h3 {
 
 .footer__item {
   padding-bottom: 15px;
-}
-
-@media (min-width: 40em) {
-  .footer__item {
-    min-width: 400px;
-  }
+  min-width: 400px;
 }
 
 .footer__copyright {
@@ -364,11 +359,17 @@ h3 {
 }
 
 .segment--bgRed {
-  background-color: #C23333;
+  background-image: url("/img/Path 4@2x.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: -5px;
 }
 
 .segment--bgBlue {
   background-color: #488195;
+  background-image: url("/img/Path 5@2x.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .segment--footerBlue {

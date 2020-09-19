@@ -1,10 +1,17 @@
 .segment {
 
     &--bgRed {
-        background-color: $brightRed;
+        //background-color: $brightRed;
+        background-image: url('/img/Path\ 4@2x.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-bottom: -5px;
     }
     &--bgBlue {
         background-color: $darkBlue;
+        background-image: url('/img/Path\ 5@2x.png');
+        background-repeat: no-repeat;
+        background-size: cover;
     }
     &--footerBlue {
         background-color: $footerBlue;

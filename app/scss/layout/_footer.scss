@@ -6,15 +6,12 @@
     &__grid {
         @include breakpoint-up(large){
             display: flex;
-            //align-items: center;
         }
     }
 
     &__item {
         padding-bottom: 15px;
-        @include breakpoint-up(medium){
-            min-width: 400px;
-        }
+        min-width: 400px;
     }
 
     &__copyright {
