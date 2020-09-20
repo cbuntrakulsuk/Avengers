@@ -2,7 +2,8 @@
 
     flex:1;
     text-align: center;
-
+    font-size: $font-med;
+    
     &__grid {
         @include breakpoint-up(large){
             display: flex;
@@ -15,7 +16,6 @@
     }
 
     &__copyright {
-        font-size: $font-sm;
         padding: 5px;
         min-height: 30px;
     }

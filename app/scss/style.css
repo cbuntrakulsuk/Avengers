@@ -273,7 +273,7 @@ h3 {
 }
 
 .header__links a {
-  font-size: 1.25rem;
+  font-size: 1.5625rem;
   -webkit-transition: color 200ms ease-in-out;
   transition: color 200ms ease-in-out;
 }
@@ -291,6 +291,7 @@ h3 {
       -ms-flex: 1;
           flex: 1;
   text-align: center;
+  font-size: 1.25rem;
 }
 
 @media (min-width: 64em) {
@@ -307,7 +308,6 @@ h3 {
 }
 
 .footer__copyright {
-  font-size: 1.125rem;
   padding: 5px;
   min-height: 30px;
 }
@@ -316,9 +316,9 @@ h3 {
   margin-bottom: 7.375rem;
 }
 
-@media (max-width: 39.9375em) {
+@media (max-width: 63.9375em) {
   .hero {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
   }
 }
 
@@ -329,7 +329,7 @@ h3 {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    min-height: 27rem;
+    min-height: 35rem;
   }
 }
 
@@ -347,27 +347,26 @@ h3 {
 .hero__image::before {
   content: "";
   position: absolute;
-  height: 100%;
+  height: 110%;
   width: 100%;
   background-image: url("/img/hero-img/Component 1 – 1@2x.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center center;
-  top: 20%;
+  top: 70px;
   left: 0%;
 }
 
 .segment--bgRed {
-  background-image: url("/img/Path 4@2x.png");
-  background-repeat: no-repeat;
+  background-color: #C23333;
   background-size: cover;
-  margin-bottom: -5px;
+  margin-bottom: -20px;
+  padding-bottom: 40px;
 }
 
 .segment--bgBlue {
   background-color: #488195;
-  background-image: url("/img/Path 5@2x.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -376,17 +375,12 @@ h3 {
   background-color: #42778A;
 }
 
-.segment__content {
-  margin-top: 20px;
-}
-
 .segment__heading {
   padding-top: 45px;
 }
 
 .segment__heading > p {
-  padding-bottom: 5rem;
-  font-size: 1.25rem;
+  font-size: 1.5625rem;
 }
 
 @media (max-width: 39.9375em) {
@@ -437,67 +431,6 @@ h3 {
   }
 }
 
-.segment__item {
-  margin-bottom: 4rem;
-  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-@media (min-width: 64em) {
-  .segment__item {
-    -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
-    max-width: 250px;
-    max-height: 300px;
-  }
-  .segment__item:not(:last-child) {
-    margin-right: 6rem;
-  }
-}
-
-.segment__item--blue {
-  border: 1px solid #0000FF;
-}
-
-.segment__item--green {
-  border: 1px solid #008000;
-}
-
-.segment__item--red {
-  border: 1px solid #D40000;
-}
-
-.segment__icon {
-  position: relative;
-  text-align: center;
-  bottom: 11%;
-}
-
-@media (max-width: 63.9375em) {
-  .segment__icon {
-    position: relative;
-    text-align: center;
-    bottom: 1.4375rem;
-  }
-}
-
-.segment__title {
-  font-size: 1.25rem;
-  text-align: center;
-  position: relative;
-  padding-bottom: 20px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.288);
-  width: 65%;
-  left: 17%;
-  margin-bottom: 10px;
-}
-
-.segment__description {
-  padding: 20px;
-  padding-bottom: 30px;
-}
-
 .segment__fbox {
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -508,7 +441,7 @@ h3 {
   .segment__fbox {
     max-width: 465px;
     padding-top: 30px;
-    font-size: 1.25rem;
+    font-size: 1.5625rem;
   }
 }
 
@@ -518,4 +451,150 @@ h3 {
     padding-right: 25px;
     padding-bottom: 25px;
   }
+}
+
+.segment__card {
+  border: 1px solid black;
+  margin: 25px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.6);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.6);
+}
+
+@media (max-width: 63.9375em) {
+  .segment__card {
+    margin-bottom: 60px;
+  }
+}
+
+@media (min-width: 64em) {
+  .segment__card {
+    max-width: 280px;
+    margin-bottom: 3rem;
+  }
+  .segment__card:not(:last-child) {
+    margin-right: 5rem;
+  }
+}
+
+.segment__img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 200px;
+  background-color: #68A4B9;
+  border-bottom: 1px solid black;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.segment__img > img {
+  position: relative;
+}
+
+.segment__content {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 1.25rem;
+}
+
+.segment__name {
+  border-top: 1px solid black;
+  padding: 10px;
+  text-align: center;
+  background-color: #68A4B9;
+  font-size: 1.5625rem;
+}
+
+.card-fade--thor:hover {
+  cursor: pointer;
+  color: white;
+}
+
+.card-fade--thor:hover > span.segment__img {
+  background: -webkit-gradient(linear, right top, left top, color-stop(50%, #488195), color-stop(50%, #68A4B9));
+  background: linear-gradient(to left, #488195 50%, #68A4B9 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  -webkit-transition: all .4s ease-out;
+  transition: all .4s ease-out;
+}
+
+.card-fade--thor:hover > div.segment__content {
+  background-clip: padding-box;
+  background: -webkit-gradient(linear, left top, right top, color-stop(50%, transparent), color-stop(50%, #C23333));
+  background: linear-gradient(to right, transparent 50%, #C23333 50%);
+  background-size: 200% 100%;
+  background-position: -100% 0;
+  -webkit-transition: all .4s ease-out;
+  transition: all .4s ease-out;
+}
+
+.card-fade--thor:hover > div.segment__name {
+  background-color: #488195;
+  color: black;
+}
+
+.card-fade--hulk:hover {
+  cursor: pointer;
+  color: white;
+}
+
+.card-fade--hulk:hover > span.segment__img {
+  background: -webkit-gradient(linear, right top, left top, color-stop(50%, #8DC11D), color-stop(50%, #68A4B9));
+  background: linear-gradient(to left, #8DC11D 50%, #68A4B9 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  -webkit-transition: all .4s ease-out;
+  transition: all .4s ease-out;
+}
+
+.card-fade--hulk:hover > div.segment__content {
+  background-clip: padding-box;
+  background: -webkit-gradient(linear, left top, right top, color-stop(50%, transparent), color-stop(50%, #89428E));
+  background: linear-gradient(to right, transparent 50%, #89428E 50%);
+  background-size: 200% 100%;
+  background-position: -100% 0;
+  -webkit-transition: all .4s ease-out;
+  transition: all .4s ease-out;
+}
+
+.card-fade--hulk:hover > div.segment__name {
+  background-color: #8DC11D;
+  color: black;
+}
+
+.card-fade--ironman:hover {
+  cursor: pointer;
+  color: white;
+}
+
+.card-fade--ironman:hover > span.segment__img {
+  background: -webkit-gradient(linear, right top, left top, color-stop(50%, #DBAD00), color-stop(50%, #68A4B9));
+  background: linear-gradient(to left, #DBAD00 50%, #68A4B9 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  -webkit-transition: all .4s ease-out;
+  transition: all .4s ease-out;
+}
+
+.card-fade--ironman:hover > div.segment__content {
+  background-clip: padding-box;
+  background: -webkit-gradient(linear, left top, right top, color-stop(50%, transparent), color-stop(50%, #D40000));
+  background: linear-gradient(to right, transparent 50%, #D40000 50%);
+  background-size: 200% 100%;
+  background-position: -100% 0;
+  -webkit-transition: all .4s ease-out;
+  transition: all .4s ease-out;
+}
+
+.card-fade--ironman:hover > div.segment__name {
+  background-color: #DBAD00;
+  color: black;
 }

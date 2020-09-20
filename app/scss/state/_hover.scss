@@ -1,0 +1,80 @@
+.card-fade {
+
+    //Thor Hover Effect
+    &--thor {
+        &:hover{
+            cursor: pointer;
+            color: white;
+            > span.segment__img {
+                background: linear-gradient(to left, $darkBlue 50%, $cardBlue 50%);
+                background-size: 200% 100%;
+                background-position: right bottom;
+                transition: all .4s ease-out;
+            }
+            > div.segment__content {
+                background-clip: padding-box;
+                background: linear-gradient(to right, transparent 50%, $brightRed 50%);
+                background-size: 200% 100%;
+                background-position: -100% 0;
+                transition: all .4s ease-out;
+            }
+            > div.segment__name {
+                background-color: $darkBlue;
+                color: black;
+            }
+        }
+    }
+
+
+    // Hulk Hover Effect
+    &--hulk {
+        &:hover{
+            cursor: pointer;
+            color: white;
+            > span.segment__img {
+                background: linear-gradient(to left, $hulkGreen 50%, $cardBlue 50%);
+                background-size: 200% 100%;
+                background-position: right bottom;
+                transition: all .4s ease-out;
+            }
+            > div.segment__content {
+                background-clip: padding-box;
+                background: linear-gradient(to right, transparent 50%, $hulkPurp 50%);
+                background-size: 200% 100%;
+                background-position: -100% 0;
+                transition: all .4s ease-out;
+            }
+            > div.segment__name {
+                background-color: $hulkGreen;
+                color: black;
+
+            }
+        }
+    }
+
+    // Ironman Hover Effect
+    &--ironman{
+        &:hover{
+            cursor: pointer;
+            color: white;
+            > span.segment__img {
+                background: linear-gradient(to left, $ironGold 50%, $cardBlue 50%);
+                background-size: 200% 100%;
+                background-position: right bottom;
+                transition: all .4s ease-out;
+            }
+            > div.segment__content {
+                background-clip: padding-box;
+                background: linear-gradient(to right, transparent 50%, $ironRed 50%);
+                background-size: 200% 100%;
+                background-position: -100% 0;
+                transition: all .4s ease-out;
+            }
+            > div.segment__name {
+                background-color: $ironGold;
+                color: black;
+            }
+        }
+    }
+
+}
