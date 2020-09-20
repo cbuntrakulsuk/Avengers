@@ -512,32 +512,32 @@ h3 {
   font-size: 1.5625rem;
 }
 
-.card-fade--thor:hover {
+.card-fade--hawk:hover {
   cursor: pointer;
   color: white;
 }
 
-.card-fade--thor:hover > span.segment__img {
-  background: -webkit-gradient(linear, right top, left top, color-stop(50%, #488195), color-stop(50%, #68A4B9));
-  background: linear-gradient(to left, #488195 50%, #68A4B9 50%);
+.card-fade--hawk:hover > span.segment__img {
+  background: -webkit-gradient(linear, right top, left top, color-stop(50%, #5F68AB), color-stop(50%, #68A4B9));
+  background: linear-gradient(to left, #5F68AB 50%, #68A4B9 50%);
   background-size: 200% 100%;
   background-position: right bottom;
   -webkit-transition: all .4s ease-out;
   transition: all .4s ease-out;
 }
 
-.card-fade--thor:hover > div.segment__content {
+.card-fade--hawk:hover > div.segment__content {
   background-clip: padding-box;
-  background: -webkit-gradient(linear, left top, right top, color-stop(50%, transparent), color-stop(50%, #C23333));
-  background: linear-gradient(to right, transparent 50%, #C23333 50%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(50%, transparent), color-stop(50%, #2B2B2B));
+  background: linear-gradient(to right, transparent 50%, #2B2B2B 50%);
   background-size: 200% 100%;
   background-position: -100% 0;
   -webkit-transition: all .4s ease-out;
   transition: all .4s ease-out;
 }
 
-.card-fade--thor:hover > div.segment__name {
-  background-color: #488195;
+.card-fade--hawk:hover > div.segment__name {
+  background-color: #5F68AB;
   color: black;
 }
 
