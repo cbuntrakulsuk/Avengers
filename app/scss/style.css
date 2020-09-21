@@ -94,7 +94,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  line-height: 1.3;
+  line-height: 30px;
   font-family: 'Abel';
   font-size: 1.125rem;
 }
@@ -402,7 +402,6 @@ h3 {
 
 .segment__divider > h2 {
   width: 100%;
-  text-align: center;
   border-bottom: 1px solid #000;
   line-height: 0.1em;
   margin: 10px 0 20px;
@@ -418,6 +417,10 @@ h3 {
   padding: 0 10px;
   padding-right: 15px;
   background: #C23333;
+}
+
+.segment__divider--c {
+  text-align: center;
 }
 
 @media (min-width: 64em) {
@@ -451,6 +454,16 @@ h3 {
     padding-right: 25px;
     padding-bottom: 25px;
   }
+}
+
+.segment__fbox--mw {
+  font-size: 1.5625rem;
+}
+
+.segment__fbox--spider > img {
+  height: 600px;
+  position: relative;
+  bottom: 6%;
 }
 
 .segment__card {
