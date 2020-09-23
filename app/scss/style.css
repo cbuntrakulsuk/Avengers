@@ -611,3 +611,122 @@ h3 {
   background-color: #DBAD00;
   color: black;
 }
+
+.comic #thor {
+  position: relative;
+  width: 150%;
+  bottom: 70px;
+  right: 80px;
+}
+
+.comic #daily {
+  position: relative;
+  width: 70%;
+  left: -340px;
+  bottom: 270px;
+}
+
+.comic #zoom {
+  position: relative;
+  width: 70%;
+  left: 182px;
+  bottom: 132px;
+}
+
+.comic #shield {
+  position: relative;
+  width: 65%;
+  left: 320px;
+  bottom: 150px;
+}
+
+.comic #hulk {
+  position: relative;
+  width: 90%;
+  left: 399px;
+  bottom: 64px;
+}
+
+.comic #work {
+  position: relative;
+  width: 85%;
+  left: 313px;
+  bottom: 534px;
+}
+
+.comic #clever {
+  position: relative;
+  width: 60%;
+  left: 149px;
+  bottom: 44px;
+}
+
+.comic__page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 1vmin;
+}
+
+.comic__panel {
+  background-color: #fff;
+  border: solid 5px #000;
+  -webkit-box-shadow: 0 6px 6px -6px #000;
+          box-shadow: 0 6px 6px -6px #000;
+  display: inline-block;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1;
+          flex: 1 1;
+  height: 200px;
+  margin: 1vmin;
+  padding-left: 20px;
+}
+
+.comic__panel:nth-child(1) {
+  -ms-flex-preferred-size: 50px;
+      flex-basis: 50px;
+  height: 250px;
+  background-color: white;
+}
+
+.comic__panel:nth-child(2) {
+  -ms-flex-preferred-size: 600px;
+      flex-basis: 600px;
+  height: 250px;
+  background-color: #FFEB9C;
+  padding-left: 250px;
+}
+
+.comic__panel:nth-child(3) {
+  -ms-flex-preferred-size: 500px;
+      flex-basis: 500px;
+  height: 250px;
+  background-color: #CBD7FF;
+}
+
+.comic__panel:nth-child(4) {
+  -ms-flex-preferred-size: 500px;
+      flex-basis: 500px;
+  height: 250px;
+  background-color: #CBFBFF;
+  padding-right: 175px;
+  padding-left: 20px;
+}
+
+.comic__panel:nth-child(5) {
+  -ms-flex-preferred-size: 400px;
+      flex-basis: 400px;
+  height: 375px;
+  background-color: #FF8888;
+  padding-right: 320px;
+}
+
+.comic__panel:nth-child(6) {
+  -ms-flex-preferred-size: 200px;
+      flex-basis: 200px;
+  height: 375px;
+  background-color: #DFACFF;
+  padding-right: 30px;
+}
