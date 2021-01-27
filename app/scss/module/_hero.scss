@@ -9,7 +9,7 @@
 
         @include breakpoint-up(medium) {
             position: relative;
-            background-image: url('/img/hero-img/hero-bg.png');
+            background-image: url('img/hero-img/hero-bg.png');
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center center;
@@ -19,7 +19,7 @@
         @include breakpoint-down(small)
         {
             position: relative;
-            background-image: url('/img/hero-img/hero-bg.png');
+            background-image: url('img/hero-img/hero-bg.png');
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center center;
@@ -31,7 +31,7 @@
             position: absolute;
             height: 110%;
             width: 100%;
-            background-image: url('/img/hero-img/Component\ 1\ –\ 1@2x.png');
+            background-image: url('img/hero-img/Component\ 1\ –\ 1@2x.png');
             background-size: cover;
             background-repeat: no-repeat;
             background-size: contain;
