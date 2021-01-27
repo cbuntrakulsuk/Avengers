@@ -105,6 +105,9 @@
             }
 
         }
+        > img {
+            width: 60%;
+        }
 
     }
 
@@ -112,7 +115,7 @@
 
     &__card {
         border: 1px solid black;
-        margin: 25px;
+        margin: 50px;
         flex: 1;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.60);
 
@@ -122,9 +125,6 @@
         @include breakpoint-up(large) {
             max-width: 280px;
             margin-bottom: 3rem;
-            &:not(:last-child){
-                margin-right: 5rem;
-              }
         }
     }
 

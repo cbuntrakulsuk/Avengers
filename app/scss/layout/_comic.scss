@@ -1,55 +1,63 @@
 .comic {
+    // Desktop styles below
+    @include breakpoint-up(large) {
 
-    #thor {
-        position: relative;
-        width: 150%;
-        bottom: 70px;
-        right: 80px;
+        #thor {
+            position: relative;
+            width: 135%;
+            bottom: 52px;
+            right: 57px;
+        }
+    
+        #daily {
+            position: relative;
+            width: 65%;
+            left: -340px;
+            bottom: 270px;
+        }
+    
+        #zoom {
+            position: relative;
+            width: 65%;
+            left: 241px;
+            bottom: 118px;
+        }
+    
+        #shield {
+            position: relative;
+            width: 65%;
+            left: 320px;
+            bottom: 165px;
+        }
+    
+        #hulk {
+            position: relative;
+            width: 95%;
+            left: 399px;
+            bottom: 64px;
+        }
+    
+        #work {
+            position: relative;
+            width: 95%;
+            left: 313px;
+            bottom: 534px;
+        }
+    
+        #clever {
+            position: relative;
+            width: 60%;
+            left: 208px;
+            bottom: 44px;
+        }
     }
 
-    #daily {
-        position: relative;
-        width: 70%;
-        left: -340px;
-        bottom: 270px;
+    #hide-mobile {
+        @include breakpoint-down(medium) {
+            display: none;
+        }
     }
 
-    #zoom {
-        position: relative;
-        width: 70%;
-        left: 182px;
-        bottom: 132px;
-    }
-
-    #shield {
-        position: relative;
-        width: 65%;
-        left: 320px;
-        bottom: 150px;
-    }
-
-    #hulk {
-        position: relative;
-        width: 90%;
-        left: 399px;
-        bottom: 64px;
-    }
-
-    #work {
-        position: relative;
-        width: 85%;
-        left: 313px;
-        bottom: 534px;
-
-    }
-
-    #clever {
-        position: relative;
-        width: 60%;
-        left: 149px;
-        bottom: 44px;
-
-    }
     &__page {
         display: flex;
         flex-wrap: wrap;
@@ -65,45 +73,78 @@
         height:200px;
         margin:1vmin;
         padding-left: 20px;
-        //position:relative;
+        padding-right: 20px;
 
-        &:nth-child(1) {
-            flex-basis: 50px;
-            height: 250px;
-            background-color: white;
+        @include breakpoint-up(large) {  // Desktop Styles
 
+            &:nth-child(1) {
+                flex-basis: 50px;
+                height: 200px;
+                background-color: white;
+    
+            }
+            &:nth-child(2) {
+                flex-basis: 600px;
+                height: 200px;
+                background-color:  #FFEB9C;
+                padding-left: 250px;
+    
+            }
+            &:nth-child(3) {
+                flex-basis: 500px;
+                height: 220px;
+                background-color: #CBD7FF;
+            }
+            &:nth-child(4) {
+                flex-basis: 500px;
+                height: 220px;
+                background-color: #CBFBFF;
+                padding-right: 175px;
+                padding-left: 20px;
+            }
+            &:nth-child(5) {
+                flex-basis: 400px;
+                height: 350px;
+                background-color: #FF8888;
+                padding-right: 320px;
+                margin-bottom: 90px;
+            }
+            &:nth-child(6) {
+                flex-basis: 200px;
+                height: 350px;
+                background-color: #DFACFF;
+                padding-right: 30px;
+                margin-bottom: 90px;
+            }
         }
-        &:nth-child(2) {
-            flex-basis: 600px;
-            height: 250px;
-            background-color:  #FFEB9C;
-            padding-left: 250px;
 
-        }
-        &:nth-child(3) {
-            flex-basis: 500px;
-            height: 250px;
-            background-color: #CBD7FF;
-        }
-        &:nth-child(4) {
-            flex-basis: 500px;
-            height: 250px;
-            background-color: #CBFBFF;
-            padding-right: 175px;
-            padding-left: 20px;
-        }
-        &:nth-child(5) {
-            flex-basis: 400px;
-            height: 375px;
-            background-color: #FF8888;
-            padding-right: 320px;
-        }
-        &:nth-child(6) {
-            flex-basis: 200px;
-            height: 375px;
-            background-color: #DFACFF;
-            padding-right: 30px;
+        @include breakpoint-down(medium) {  // Mobile Style
+
+            &:nth-child(2) {
+                flex-basis: 200px;
+                height: 220px;
+                background-color:  #FFEB9C;
+            }
+            &:nth-child(3) {
+                flex-basis: 350px;
+                height: 220px;
+                background-color: #CBD7FF;
+            }
+            &:nth-child(4) {
+                flex-basis: 350px;
+                height: 220px;
+                background-color: #CBFBFF;
+            }
+            &:nth-child(5) {
+                flex-basis: 350px;
+                height: 220px;
+                background-color: #FF8888;
+            }
+            &:nth-child(6) {
+                flex-basis: 3500px;
+                height: 220px;
+                background-color: #DFACFF;
+            }
         }
     }
-
 }

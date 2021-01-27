@@ -466,9 +466,13 @@ h3 {
   bottom: 6%;
 }
 
+.segment__fbox > img {
+  width: 60%;
+}
+
 .segment__card {
   border: 1px solid black;
-  margin: 25px;
+  margin: 50px;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -486,9 +490,6 @@ h3 {
   .segment__card {
     max-width: 280px;
     margin-bottom: 3rem;
-  }
-  .segment__card:not(:last-child) {
-    margin-right: 5rem;
   }
 }
 
@@ -612,53 +613,55 @@ h3 {
   color: black;
 }
 
-.comic #thor {
-  position: relative;
-  width: 150%;
-  bottom: 70px;
-  right: 80px;
+@media (min-width: 64em) {
+  .comic #thor {
+    position: relative;
+    width: 135%;
+    bottom: 52px;
+    right: 57px;
+  }
+  .comic #daily {
+    position: relative;
+    width: 65%;
+    left: -340px;
+    bottom: 270px;
+  }
+  .comic #zoom {
+    position: relative;
+    width: 65%;
+    left: 241px;
+    bottom: 118px;
+  }
+  .comic #shield {
+    position: relative;
+    width: 65%;
+    left: 320px;
+    bottom: 165px;
+  }
+  .comic #hulk {
+    position: relative;
+    width: 95%;
+    left: 399px;
+    bottom: 64px;
+  }
+  .comic #work {
+    position: relative;
+    width: 95%;
+    left: 313px;
+    bottom: 534px;
+  }
+  .comic #clever {
+    position: relative;
+    width: 60%;
+    left: 208px;
+    bottom: 44px;
+  }
 }
 
-.comic #daily {
-  position: relative;
-  width: 70%;
-  left: -340px;
-  bottom: 270px;
-}
-
-.comic #zoom {
-  position: relative;
-  width: 70%;
-  left: 182px;
-  bottom: 132px;
-}
-
-.comic #shield {
-  position: relative;
-  width: 65%;
-  left: 320px;
-  bottom: 150px;
-}
-
-.comic #hulk {
-  position: relative;
-  width: 90%;
-  left: 399px;
-  bottom: 64px;
-}
-
-.comic #work {
-  position: relative;
-  width: 85%;
-  left: 313px;
-  bottom: 534px;
-}
-
-.comic #clever {
-  position: relative;
-  width: 60%;
-  left: 149px;
-  bottom: 44px;
+@media (max-width: 63.9375em) {
+  .comic #hide-mobile {
+    display: none;
+  }
 }
 
 .comic__page {
@@ -682,51 +685,84 @@ h3 {
   height: 200px;
   margin: 1vmin;
   padding-left: 20px;
+  padding-right: 20px;
 }
 
-.comic__panel:nth-child(1) {
-  -ms-flex-preferred-size: 50px;
-      flex-basis: 50px;
-  height: 250px;
-  background-color: white;
+@media (min-width: 64em) {
+  .comic__panel:nth-child(1) {
+    -ms-flex-preferred-size: 50px;
+        flex-basis: 50px;
+    height: 200px;
+    background-color: white;
+  }
+  .comic__panel:nth-child(2) {
+    -ms-flex-preferred-size: 600px;
+        flex-basis: 600px;
+    height: 200px;
+    background-color: #FFEB9C;
+    padding-left: 250px;
+  }
+  .comic__panel:nth-child(3) {
+    -ms-flex-preferred-size: 500px;
+        flex-basis: 500px;
+    height: 220px;
+    background-color: #CBD7FF;
+  }
+  .comic__panel:nth-child(4) {
+    -ms-flex-preferred-size: 500px;
+        flex-basis: 500px;
+    height: 220px;
+    background-color: #CBFBFF;
+    padding-right: 175px;
+    padding-left: 20px;
+  }
+  .comic__panel:nth-child(5) {
+    -ms-flex-preferred-size: 400px;
+        flex-basis: 400px;
+    height: 350px;
+    background-color: #FF8888;
+    padding-right: 320px;
+    margin-bottom: 90px;
+  }
+  .comic__panel:nth-child(6) {
+    -ms-flex-preferred-size: 200px;
+        flex-basis: 200px;
+    height: 350px;
+    background-color: #DFACFF;
+    padding-right: 30px;
+    margin-bottom: 90px;
+  }
 }
 
-.comic__panel:nth-child(2) {
-  -ms-flex-preferred-size: 600px;
-      flex-basis: 600px;
-  height: 250px;
-  background-color: #FFEB9C;
-  padding-left: 250px;
-}
-
-.comic__panel:nth-child(3) {
-  -ms-flex-preferred-size: 500px;
-      flex-basis: 500px;
-  height: 250px;
-  background-color: #CBD7FF;
-}
-
-.comic__panel:nth-child(4) {
-  -ms-flex-preferred-size: 500px;
-      flex-basis: 500px;
-  height: 250px;
-  background-color: #CBFBFF;
-  padding-right: 175px;
-  padding-left: 20px;
-}
-
-.comic__panel:nth-child(5) {
-  -ms-flex-preferred-size: 400px;
-      flex-basis: 400px;
-  height: 375px;
-  background-color: #FF8888;
-  padding-right: 320px;
-}
-
-.comic__panel:nth-child(6) {
-  -ms-flex-preferred-size: 200px;
-      flex-basis: 200px;
-  height: 375px;
-  background-color: #DFACFF;
-  padding-right: 30px;
+@media (max-width: 63.9375em) {
+  .comic__panel:nth-child(2) {
+    -ms-flex-preferred-size: 200px;
+        flex-basis: 200px;
+    height: 220px;
+    background-color: #FFEB9C;
+  }
+  .comic__panel:nth-child(3) {
+    -ms-flex-preferred-size: 350px;
+        flex-basis: 350px;
+    height: 220px;
+    background-color: #CBD7FF;
+  }
+  .comic__panel:nth-child(4) {
+    -ms-flex-preferred-size: 350px;
+        flex-basis: 350px;
+    height: 220px;
+    background-color: #CBFBFF;
+  }
+  .comic__panel:nth-child(5) {
+    -ms-flex-preferred-size: 350px;
+        flex-basis: 350px;
+    height: 220px;
+    background-color: #FF8888;
+  }
+  .comic__panel:nth-child(6) {
+    -ms-flex-preferred-size: 3500px;
+        flex-basis: 3500px;
+    height: 220px;
+    background-color: #DFACFF;
+  }
 }
